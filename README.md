@@ -1,80 +1,83 @@
-# 🤖 AgentRAG AI
+# 🤖 AgentRAG AI – Agentic Research Paper Question Answering System
 
-An Agentic Retrieval-Augmented Generation (RAG) application that allows users to upload research papers in PDF format and ask natural language questions. The system retrieves relevant document chunks using semantic search and generates context-aware responses using Groq LLM.
-
----
-
-## 📌 Features
-
-- 📄 Upload research papers (PDF)
-- 🔍 Semantic document retrieval using FAISS
-- 🧠 HuggingFace Sentence Transformer embeddings
-- 🤖 Context-aware answers using Groq LLM
-- 🔄 Agentic workflow using LangGraph
-- 💬 Interactive Streamlit interface
-- ⚡ Fast and efficient Retrieval-Augmented Generation (RAG)
+An intelligent **Agentic Retrieval-Augmented Generation (RAG)** application that enables users to upload research papers in PDF format and ask natural language questions. The system retrieves the most relevant document chunks using semantic search and generates context-aware answers using **Groq LLM**.
 
 ---
 
-## 🏗️ Project Architecture
+## 🚀 Project Highlights
 
-```
-PDF Upload
-      │
-      ▼
-Text Extraction
-      │
-      ▼
-Text Chunking
-      │
-      ▼
-HuggingFace Embeddings
-      │
-      ▼
-FAISS Vector Store
-      │
-      ▼
-Retriever
-      │
-      ▼
-LangGraph Agent
-      │
-      ▼
-Groq LLM
-      │
-      ▼
-Generated Response
-```
+- 📄 Upload any research paper in PDF format
+- 🤖 Ask questions in natural language
+- 🧠 Semantic search using HuggingFace Embeddings
+- ⚡ Fast retrieval with FAISS Vector Database
+- 🔄 Agentic workflow powered by LangGraph
+- 💬 Interactive Streamlit web interface
+- 📚 Retrieval-Augmented Generation (RAG) pipeline
+- 🔒 Secure API key management using `.env`
 
 ---
 
-## 🖥️ User Interface
+# 🖥️ User Interface
 
-### Home Screen
+## Home Screen
 
 ![Home](assets/home.png)
 
-### Question Answering
+## Research Paper Q&A
 
 ![Chat](assets/chat.png)
 
 ---
 
-## 🛠️ Tech Stack
+# 🏗️ System Architecture
 
-- Python
-- Streamlit
-- LangChain
-- LangGraph
-- FAISS
-- HuggingFace Embeddings
-- Groq API
-- PyPDF
-- Sentence Transformers
+```
+                 PDF Upload
+                     │
+                     ▼
+             PDF Text Extraction
+                     │
+                     ▼
+               Text Chunking
+                     │
+                     ▼
+     HuggingFace Sentence Embeddings
+                     │
+                     ▼
+          FAISS Vector Database
+                     │
+                     ▼
+        Semantic Document Retrieval
+                     │
+                     ▼
+          LangGraph Agent Workflow
+                     │
+                     ▼
+                Groq LLM
+                     │
+                     ▼
+         Context-Aware Response
+```
 
 ---
 
-## 📂 Project Structure
+# 🛠️ Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Programming Language | Python |
+| Frontend | Streamlit |
+| LLM | Groq |
+| Framework | LangChain |
+| Agent Framework | LangGraph |
+| Vector Database | FAISS |
+| Embeddings | HuggingFace Sentence Transformers |
+| PDF Processing | PyPDF |
+| Environment | Python Dotenv |
+
+---
+
+# 📂 Project Structure
 
 ```
 AgentRAG-AI
@@ -83,8 +86,8 @@ AgentRAG-AI
 ├── backend.py
 ├── requirements.txt
 ├── README.md
-├── .gitignore
 ├── .env.example
+├── .gitignore
 ├── assets/
 ├── sample_documents/
 └── AgentRAG_AI.ipynb
@@ -92,34 +95,35 @@ AgentRAG-AI
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
-Clone the repository
+### Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/AgentRAG-AI.git
+git clone https://github.com/haiderkhadeeja54-png/AgentRAG-AI.git
 ```
 
-Move inside the folder
+### Move into the project
 
 ```bash
 cd AgentRAG-AI
 ```
 
-Install dependencies
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Create a `.env` file
+### Create a `.env` file
 
 ```text
-GROQ_API_KEY=your_key_here
-TAVILY_API_KEY=your_key_here
+GROQ_API_KEY=your_groq_api_key
+
+TAVILY_API_KEY=your_tavily_api_key
 ```
 
-Run the application
+### Run the application
 
 ```bash
 python -m streamlit run app.py
@@ -127,17 +131,37 @@ python -m streamlit run app.py
 
 ---
 
-## 🎯 Future Improvements
+# 💡 How It Works
 
-- Chat history
-- Multiple PDF support
-- Persistent vector database
-- PDF citation highlighting
-- Cloud deployment
-- Authentication
+1. Upload a research paper.
+2. The PDF is converted into text.
+3. Text is split into smaller chunks.
+4. HuggingFace creates embeddings.
+5. FAISS stores the embeddings.
+6. Relevant chunks are retrieved using semantic search.
+7. Groq LLM generates context-aware answers.
 
 ---
 
-## 👩‍💻 Author
+# 🎯 Future Improvements
 
-Khadeeja Haider
+- Multiple PDF support
+- Conversation history
+- Source citation highlighting
+- Persistent vector database
+- Cloud deployment
+- Authentication system
+
+---
+
+# 👩‍💻 Author
+
+**Khadeeja Haider**
+
+Computer Science Undergraduate
+
+Passionate about Artificial Intelligence, Generative AI, Machine Learning, and NLP.
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
